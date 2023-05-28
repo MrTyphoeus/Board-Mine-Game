@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.c
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(52,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(154,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(51,9): warning C4101: 't': unreferenced local variable
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(22): warning C4716: 'printMap': must return a value
+  ConsoleApplication1.vcxproj -> C:\Users\furka\Source\Repos\Board-Mine-Game\x64\Debug\CGame.exe
