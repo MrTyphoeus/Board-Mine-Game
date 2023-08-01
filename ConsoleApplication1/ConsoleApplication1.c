@@ -1,4 +1,3 @@
-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <conio.h>	
@@ -7,16 +6,19 @@
 #include <Windows.h>
 #include<locale.h>
 
-char map[5][15];
+#define MAP_ROWS 5
+#define MAP_COLS 15
 
-int printMap(char map[5][15]) {										//Function for printing map
-	system("cls");		
-	for (int i = 0; i < 5; i++) {									
-		for (int j = 0; j < 15; j++) {
+char map[MAP_ROWS][MAP_COLS];
+
+int printMap(char map[MAP_ROWS][MAP_COLS]) {										//Function for printing map
+	system("cls");
+	for (int i = 0; i < MAP_ROWS; i++) {
+		for (int j = 0; j < MAP_COLS; j++) {
 			printf("  %c  ", map[i][j]);
 		}
 		printf("|");
-		printf("\n\n");										    	
+		printf("\n\n");
 	}
 
 }
@@ -25,10 +27,17 @@ void showControls() {
 	printf("\n\t\t ^ \n\t\t(W)\n\n\t<-(A)\t      (D)->\n\n\t\t(S)\n\t\t V\n\n");
 }
 
-void makeMap(char map[5][15]) {
+int printplayers(int score, int lastscore) {
+
+	printf("\t\t\t\t\t\tPlayer 1: %d\n", score);
+	printf("\t\t\t\t\t\tPlayer 2: %d\n", lastscore);
+
+}
+
+void makeMap(char map[MAP_ROWS][MAP_COLS]) {
 																	//Function for making random matrix map
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 15; j++) {
+	for (int i = 0; i < MAP_ROWS; i++) {
+		for (int j = 0; j < MAP_COLS; j++) {
 			map[i][j] = ' ';
 			int randomNumber = rand() % 2;							//Choses randomly 0 or 1 
 			if (randomNumber == 1)							   	    //If random number equals to 1, places x to that coordinate 
@@ -37,11 +46,11 @@ void makeMap(char map[5][15]) {
 	}
 
 
-}															
+}
 
-void main() {		
+void main() {
 
-	
+
 
 
 	printf("\n\n\t\tWelcome !!\n\n\n\t\tThe purpose of the game is reaching to the end by going through less x and move number\n");
@@ -53,14 +62,14 @@ void main() {
 
 	system("pause");
 
-	int selected = 1;
-	
+	int selected = 1, mapCounter = 1;
+
 
 	while (selected != 51) {
 
 		makeMap(map);
 
-		int oldValue, newValue = 2, character = 49;
+		int oldValue, character = 4;
 
 		selected = 1;                                                    //Selected reset
 
@@ -69,11 +78,11 @@ void main() {
 
 		char wasdCoordinateChange;
 
-		int rowMove = 2, columnMove = 0, score = 100, moveNumber = 0;
+		int rowMove = 2, columnMove = 0, score = 100, lastScore = 0, moveNumber = 0;
 
-		while (columnMove <= 14 && columnMove >= 0) {				//Continues as long as the character does not finish the map
+		while (columnMove < MAP_COLS && columnMove >= 0) {				//Continues as long as the character does not finish the map
 
-			
+
 
 			printMap(map);
 			showControls();
@@ -83,8 +92,8 @@ void main() {
 			printf("\nNumber Of Move: %d\t\t\t", moveNumber);
 			printf("score: %d\n", score);
 
-			wasdCoordinateChange = _getch(); 
-			 
+			wasdCoordinateChange = _getch();
+
 			if (wasdCoordinateChange == 100 || wasdCoordinateChange == 68) {				     //d & D
 				map[rowMove][columnMove] = oldValue;            //Puts the old value to the characters place
 				columnMove += 1;							    //Increase the character's column by 1								
@@ -95,7 +104,7 @@ void main() {
 
 
 			else if (wasdCoordinateChange == 97 || wasdCoordinateChange == 65) {				//a & A
-				map[rowMove][columnMove] = oldValue;										
+				map[rowMove][columnMove] = oldValue;
 				columnMove -= 1;					            //Decrease the character's column by 1
 				if (columnMove < 0)
 					columnMove = 0;
@@ -148,9 +157,12 @@ void main() {
 		}
 
 		system("cls");
-		printf("\n\n\n\t\t\tSuccessfully completed !\t\t\t \n\n");
-		printf("\t\t\tNumber of moves: %d \t\t\t\n\n", moveNumber);
-		printf("\t\t\tScore: %d \t\t\t\n\n\n", score);
+		printf("\n\n\n\t\t\tSuccessfully completed !\t\t\t Map:%d \n\n", mapCounter);
+		printf("\t\t\tNumber of moves: %d \t\t\t\n", moveNumber);
+
+		printplayers(score, lastScore);
+
+		printf("\n\t\t\tScore: %d \t\t\t\n\n\n", score);
 		printf("\t\t\tFor different map (1)\n\t\t\tWith same map (2)\n\t\t\tTo quit (3)\n");
 
 
@@ -158,8 +170,9 @@ void main() {
 			selected = _getch();
 			if (selected == 49) {							     //Different map
 				srand(time(NULL));							     //Sets random
+				mapCounter++;
 				break;
-			}			                                        
+			}
 			else if (selected == 50) {							 //Same map
 				srand(1);
 				break;
@@ -170,7 +183,8 @@ void main() {
 			else
 				selected = 1;
 		}
+
+		lastScore = score;
+
 	}
 }
-
-
