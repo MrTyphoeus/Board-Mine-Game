@@ -1,7 +1,7 @@
-﻿  ConsoleApplication1.c
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(61,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(172,11): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(60,9): warning C4101: 't': yerel değişken başvurusu kaldırıldı
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(35): warning C4716: 'printplayers' : bir değer döndürmelidir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\ConsoleApplication1.c(24): warning C4716: 'printMap' : bir değer döndürmelidir
+﻿  minbor_ext.c
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(82,10): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(152,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(161,8): warning C4101: 'wasdCoordinateChange': yerel değişken başvurusu kaldırıldı
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(31): warning C4716: 'printMap' : bir değer döndürmelidir
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(146): warning C4715: 'moveCharacter': tüm denetim yolları değer döndürmez
   ConsoleApplication1.vcxproj -> C:\Users\furka\source\repos\Board-Mine-Game\x64\Debug\CGame.exe
