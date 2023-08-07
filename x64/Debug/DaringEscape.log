@@ -1,0 +1,7 @@
+﻿  DaringEscapeMain.c
+C:\Users\furka\source\repos\DaringEscape\DaringEscapeMain.c(34,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\furka\source\repos\DaringEscape\DaringEscapeMain.c(253,39): warning C4047: 'işlev': 'int', yöneltme düzeyi sayısı bakımından 'int *' ile aynı değil
+C:\Users\furka\source\repos\DaringEscape\DaringEscapeMain.c(253,25): warning C4024: 'print_End': 2 biçimsel ve gerçek parametresi için farklı türler
+C:\Users\furka\source\repos\DaringEscape\DaringEscapeMain.c(219): warning C4715: 'current_Player': tüm denetim yolları değer döndürmez
+C:\Users\furka\source\repos\DaringEscape\DaringEscapeMain.c(200): warning C4715: 'move_Character': tüm denetim yolları değer döndürmez
+  DaringEscape.vcxproj -> C:\Users\furka\source\repos\DaringEscape\x64\Debug\DaringEscape.exe
