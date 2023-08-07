@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="minbor_ext.c">
+    <ClCompile Include="daringescapemain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

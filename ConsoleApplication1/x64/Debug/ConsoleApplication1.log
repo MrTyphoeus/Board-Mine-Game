@@ -1,7 +1,9 @@
-﻿  minbor_ext.c
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(82,10): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(152,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(161,8): warning C4101: 'wasdCoordinateChange': yerel değişken başvurusu kaldırıldı
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(31): warning C4716: 'printMap' : bir değer döndürmelidir
-C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\minbor_ext.c(146): warning C4715: 'moveCharacter': tüm denetim yolları değer döndürmez
-  ConsoleApplication1.vcxproj -> C:\Users\furka\source\repos\Board-Mine-Game\x64\Debug\CGame.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: Ara dizin (x64\Debug\) başka bir projeden (CGame.vcxproj) paylaşılan dosyalar içeriyor. Bu, hatalı temizleme ve yeniden oluşturma davranışına neden olabilir.
+  daringescapemain.c
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(34,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(100,21): warning C4047: '=': 'int *', yöneltme düzeyi sayısı bakımından 'int' ile aynı değil
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(252,39): warning C4047: 'işlev': 'int', yöneltme düzeyi sayısı bakımından 'int *' ile aynı değil
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(252,25): warning C4024: 'print_End': 2 biçimsel ve gerçek parametresi için farklı türler
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(218): warning C4715: 'current_Player': tüm denetim yolları değer döndürmez
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(200): warning C4715: 'move_Character': tüm denetim yolları değer döndürmez
+  ConsoleApplication1.vcxproj -> C:\Users\furka\source\repos\Board-Mine-Game\x64\Debug\DARING ESCAPE v1.2.exe
