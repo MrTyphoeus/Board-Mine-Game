@@ -1,0 +1,8 @@
+﻿  daringescapemain.c
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(34,8): warning C4244: 'işlev': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(100,21): warning C4047: '=': 'int *', yöneltme düzeyi sayısı bakımından 'int' ile aynı değil
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(252,39): warning C4047: 'işlev': 'int', yöneltme düzeyi sayısı bakımından 'int *' ile aynı değil
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(252,25): warning C4024: 'print_End': 2 biçimsel ve gerçek parametresi için farklı türler
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(218): warning C4715: 'current_Player': tüm denetim yolları değer döndürmez
+C:\Users\furka\source\repos\Board-Mine-Game\ConsoleApplication1\daringescapemain.c(200): warning C4715: 'move_Character': tüm denetim yolları değer döndürmez
+  ConsoleApplication1.vcxproj -> C:\Users\furka\source\repos\Board-Mine-Game\x64\Debug\DARING ESCAPE v1.2.exe
